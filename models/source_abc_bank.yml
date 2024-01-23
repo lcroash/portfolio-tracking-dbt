@@ -5,3 +5,14 @@ sources:
     schema: SOURCE_DATA
     tables:
       - name: ABC_BANK_POSITION
+        description: The landing table holding the imported CSV data.
+        columns:
+          - name: ACCOUNTID
+            description: The code for the account at ABC Bank.
+            test:
+            - not_null
+      - name: SYMBOL
+        description: The synbol of the security at ABC Bank.
+        test:
+          - unique
+          - not_null
