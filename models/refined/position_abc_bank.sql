@@ -1,6 +1,3 @@
--- SELECT * 
--- FROM {{ source('abc_bank', 'ABC_BANK_POSITION')}}
-
 SELECT 
     *
     ,POSITION_VALUE - COST_BASE as UNREALIZED_PROFIT
