@@ -1,2 +1,2 @@
 SELECT *
-FROM {{.ref('REF_POSITON_ABC_BANK') }}
+FROM {{ ref('REF_POSITON_ABC_BANK') }}
