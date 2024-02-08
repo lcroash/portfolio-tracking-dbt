@@ -1,7 +1,7 @@
 WITH current_from_snapshot as (
     SELECT *
     FROM {{ ref('SNSH_ABC_BANK_POSITION') }}
-    WHERE DBT_VALID IS NULL
+    WHERE DBT_VALID_TO IS NULL
 )
 
 SELECT 
